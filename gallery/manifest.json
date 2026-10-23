@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bridge-rave",
+    "images": [
+      "0.svg",
+      "1.svg",
+      "2.svg",
+      "3.svg",
+      "4.svg",
+      "5.svg"
+    ]
+  },
+  {
+    "id": "dorm-show",
+    "images": [
+      "0.svg",
+      "1.svg",
+      "2.svg",
+      "3.svg"
+    ]
+  }
+]

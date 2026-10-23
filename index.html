@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#010203">
   <meta name="description" content="BNFG Lighting. Small event lighting at UO.">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="gallery.css">
   <title>BNFG Lighting</title>
 </head>
 <body class="relative h-dvh overflow-hidden bg-[#010203] text-white antialiased">
@@ -27,8 +28,23 @@
     <p class="mt-8 pl-[0.5em] text-sm font-medium tracking-[0.5em] text-white uppercase sm:text-base">BNFG Lighting</p>
     <p class="mt-3 text-sm text-white/55 sm:text-base">small event lighting at UO</p>
 
-    <a href="https://instagram.com/bnfg.lighting" target="_blank" rel="noopener" class="mt-10 rounded-full border border-white/20 py-2.5 pr-6 pl-[calc(1.5rem+0.1em)] text-sm tracking-widest text-white/80 transition duration-300 hover:border-white/60 hover:bg-white/5 hover:text-white focus-visible:border-white/60 focus-visible:text-white focus-visible:outline-none">@bnfg.lighting</a>
+    <div class="actions">
+      <a href="https://instagram.com/bnfg.lighting" target="_blank" rel="noopener" class="rounded-full border border-white/20 py-2.5 pr-6 pl-[calc(1.5rem+0.1em)] text-sm tracking-widest text-white/80 transition duration-300 hover:border-white/60 hover:bg-white/5 hover:text-white focus-visible:border-white/60 focus-visible:text-white focus-visible:outline-none">@bnfg.lighting</a>
+      <button type="button" id="gallery-open" aria-controls="gallery" class="rounded-full border border-white/20 py-2.5 pr-6 pl-[calc(1.5rem+0.1em)] text-sm tracking-widest text-white/80 transition duration-300 hover:border-white/60 hover:bg-white/5 hover:text-white focus-visible:border-white/60 focus-visible:text-white focus-visible:outline-none">gallery</button>
+    </div>
   </main>
+
+  <section id="gallery" aria-label="Gallery" aria-hidden="true" inert>
+    <header class="g-bar">
+      <button type="button" id="gallery-close" class="g-back">&larr; back</button>
+      <span class="g-brand">BNFG Lighting</span>
+    </header>
+    <div class="g-scroll" id="gallery-scroll">
+      <div id="gallery-entries"></div>
+    </div>
+  </section>
+
+  <script src="gallery.js"></script>
 
 </body>
 </html>

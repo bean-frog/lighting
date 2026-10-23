@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="hsl(160 60% 14%)"/><stop offset="1" stop-color="#010203"/></linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="hsl(160 90% 70%)" stop-opacity=".75"/><stop offset="1" stop-color="hsl(160 90% 60%)" stop-opacity="0"/></linearGradient>
+<filter id="b"><feGaussianBlur stdDeviation="14"/></filter></defs>
+<rect width="1000" height="750" fill="url(#bg)"/>
+<g filter="url(#b)"><polygon points="640,0 660,0 1000,750 300,750" fill="url(#beam)"/>
+<polygon points="344,0 356,0 550,750 50,750" fill="url(#beam)" opacity=".6"/></g>
+<text x="500" y="710" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" letter-spacing="8" fill="#fff" fill-opacity=".4">PLACEHOLDER 4</text></svg>
