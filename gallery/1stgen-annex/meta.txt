@@ -1,0 +1,3 @@
+title: 1STGEN: Rave Oregon
+0: Sound check and lighting setup
+1: Control setup mid-event
