@@ -174,7 +174,73 @@ body.gallery-open .g-tile {
   opacity: 1; transform: none; filter: none; letter-spacing: 0.01em; transition-delay: 0.15s;
 }
 
+/* Lightbox */
+.g-tile { cursor: zoom-in; }
+.g-tile.is-loaded.is-lifted img { opacity: 0; transition: none; }
+.lb { position: absolute; inset: 0; z-index: 30; visibility: hidden; pointer-events: none; }
+.lb.is-shown { visibility: visible; pointer-events: auto; }
+.lb-bg {
+  position: absolute;
+  inset: 0;
+  background: rgb(1 2 3 / 0.86);
+  opacity: 0;
+  backdrop-filter: blur(0);
+  transition: opacity 0.55s ease, backdrop-filter 0.7s ease;
+}
+.lb.is-open .lb-bg { opacity: 1; backdrop-filter: blur(16px); }
+.lb-img {
+  position: absolute;
+  transform-origin: 0 0;
+  object-fit: cover;
+  cursor: zoom-out;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.12), 0 2rem 6rem rgb(0 0 0 / 0.6);
+  transition: transform 0.75s var(--ease-out), opacity 0.4s ease;
+}
+.lb-cap {
+  position: absolute;
+  inset: auto 1.5rem 1.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(255 255 255 / 0.85);
+  pointer-events: none;
+}
+.lb-cap span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.9rem);
+  filter: blur(6px);
+  letter-spacing: 0.14em;
+  transition: opacity 0.3s ease, transform 0.4s var(--ease-out), filter 0.3s ease, letter-spacing 0.4s var(--ease-out);
+}
+.lb.is-open .lb-cap span {
+  opacity: 1; transform: none; filter: none; letter-spacing: 0.01em;
+  transition: opacity 0.5s ease 0.35s, transform 0.7s var(--ease-out) 0.35s, filter 0.6s ease 0.35s, letter-spacing 0.9s var(--ease-out) 0.35s;
+}
+.lb-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: 1px solid rgb(255 255 255 / 0.2);
+  border-radius: 9999px;
+  background: none;
+  color: rgb(255 255 255 / 0.8);
+  font-size: 1.5rem;
+  line-height: 1;
+  opacity: 0;
+  transform: scale(0.8) rotate(-45deg);
+  transition: opacity 0.4s ease, transform 0.6s var(--ease-out), border-color 0.3s, background-color 0.3s;
+}
+.lb.is-open .lb-close { opacity: 1; transform: none; transition-delay: 0.25s, 0.25s, 0s, 0s; }
+.lb-close:hover, .lb-close:focus-visible { border-color: rgb(255 255 255 / 0.6); background: rgb(255 255 255 / 0.08); color: #fff; outline: none; }
+
 @media (prefers-reduced-motion: reduce) {
+  .lb-bg, .lb-img, .lb-cap span, .lb-close { transition-duration: 0.01s !important; transition-delay: 0s !important; }
   main, #gallery, .g-bar, .g-tile, .g-tile img, .g-cap, .g-cap span, .g-cap::before { transition-duration: 0.01s !important; transition-delay: 0s !important; }
   body.gallery-open main { transform: none; filter: none; }
   .g-tile { transform: none; filter: none; }
