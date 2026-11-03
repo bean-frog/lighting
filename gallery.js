@@ -38,14 +38,21 @@
     const grid = document.createElement('div');
     grid.className = 'g-grid';
 
-    images.forEach((file, i) => {
+    images.forEach((image, i) => {
       const tile = document.createElement('figure');
       tile.className = 'g-tile';
       tile.tabIndex = 0;
       const img = document.createElement('img');
       img.loading = 'lazy';
       img.decoding = 'async';
-      img.src = `gallery/${encodeURIComponent(id)}/${encodeURIComponent(file)}`;
+      // reserve the final box up front so late-loading images never reflow the columns
+      img.width = image.w;
+      img.height = image.h;
+      tile.style.aspectRatio = `${image.w} / ${image.h}`;
+      const reveal = () => tile.classList.add('is-loaded');
+      img.addEventListener('load', () => { (img.decode ? img.decode() : Promise.resolve()).then(reveal, reveal); }, { once: true });
+      img.addEventListener('error', reveal, { once: true });
+      img.src = `gallery/${encodeURIComponent(id)}/${image.thumb.split('/').map(encodeURIComponent).join('/')}`;
       const caption = meta.captions[i];
       img.alt = caption || `${meta.title || id} ${i}`;
       tile.append(img);

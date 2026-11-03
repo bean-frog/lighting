@@ -2,27 +2,107 @@
   {
     "id": "1stgen-annex",
     "images": [
-      "0.jpg",
-      "1.jpg",
-      "2.jpg"
+      {
+        "src": "0.jpg",
+        "thumb": "thumbs/0.webp",
+        "w": 1000,
+        "h": 750
+      },
+      {
+        "src": "1.jpg",
+        "thumb": "thumbs/1.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "2.jpg",
+        "thumb": "thumbs/2.webp",
+        "w": 750,
+        "h": 1000
+      }
     ]
   },
   {
     "id": "bridge-rave",
     "images": [
-      "0.jpg",
-      "1.jpg",
-      "2.jpg",
-      "3.jpg",
-      "4.jpg",
-      "5.jpg",
-      "6.jpg",
-      "7.jpg",
-      "8.jpg",
-      "9.jpg",
-      "10.jpg",
-      "11.jpg",
-      "12.jpg"
+      {
+        "src": "0.jpg",
+        "thumb": "thumbs/0.webp",
+        "w": 1000,
+        "h": 750
+      },
+      {
+        "src": "1.jpg",
+        "thumb": "thumbs/1.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "2.jpg",
+        "thumb": "thumbs/2.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "3.jpg",
+        "thumb": "thumbs/3.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "4.jpg",
+        "thumb": "thumbs/4.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "5.jpg",
+        "thumb": "thumbs/5.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "6.jpg",
+        "thumb": "thumbs/6.webp",
+        "w": 462,
+        "h": 1000
+      },
+      {
+        "src": "7.jpg",
+        "thumb": "thumbs/7.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "8.jpg",
+        "thumb": "thumbs/8.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "9.jpg",
+        "thumb": "thumbs/9.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "10.jpg",
+        "thumb": "thumbs/10.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "11.jpg",
+        "thumb": "thumbs/11.webp",
+        "w": 750,
+        "h": 1000
+      },
+      {
+        "src": "12.jpg",
+        "thumb": "thumbs/12.webp",
+        "w": 750,
+        "h": 1000
+      }
     ]
   }
 ]
