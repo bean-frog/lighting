@@ -1,3 +1,4 @@
+
 // Gallery overlay. Entries come from gallery/manifest.json (npm run gallery) plus each folder's meta.txt:
 //   title: Some Title
 //   0: caption for first image
