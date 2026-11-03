@@ -1,4 +1,4 @@
-title: Bridge Raves 2026-26
+title: Bridge Raves 2025-26
 0: Stage setup (pre-open)
 1: Stage setup with new moving heads
 2: Control setup shortly after open
