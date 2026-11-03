@@ -1,7 +1,14 @@
-title: Bridge Rave
-0: Wash look during the opening set
-1: Moving heads on the drop
-2: Strobe chase, last chorus
-3: Warm sunset palette for the walk-in
-4: Green and teal slow fade
-5: Full rig blackout hit
+title: Bridge Raves 2026-26
+0: Stage setup (pre-open)
+1: Stage setup with new moving heads
+2: Control setup shortly after open
+3: Full rig after getting a simple truss
+4: Crowd blinders during a drop
+5: DJs doing soundcheck under a blue wash
+6: Busking alongside the DJ
+7: Setting up truss (yes, it's a giant stick lol)
+8: Lighting test before opening
+9: Setting up lighting controls
+10: Crowd shot during buildup
+11: Crowd shot from the back, my first bridge rave where setup was simply four PARs
+12: Busking with nothing but a Streamdeck and four PARs
