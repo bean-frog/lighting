@@ -17,7 +17,8 @@
 main {
   transition: opacity 0.7s var(--ease-io), transform 0.9s var(--ease-io), filter 0.7s var(--ease-io), visibility 0s linear 0s;
 }
-body.gallery-open main {
+body.gallery-open main,
+body.services-open main {
   opacity: 0;
   transform: scale(1.06);
   filter: blur(14px);
@@ -27,7 +28,7 @@ body.gallery-open main {
 }
 
 /* Gallery crossfades with the landing content in both directions. */
-#gallery {
+#gallery, #services {
   position: absolute;
   inset: 0;
   z-index: 20;
@@ -39,7 +40,7 @@ body.gallery-open main {
   opacity: 0;
   transition: opacity 0.7s var(--ease-io), visibility 0s linear 0.7s;
 }
-#gallery::before {
+#gallery::before, #services::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -48,7 +49,8 @@ body.gallery-open main {
   mask-image: linear-gradient(to bottom, black, transparent 60%);
   filter: blur(16px);
 }
-body.gallery-open #gallery {
+body.gallery-open #gallery,
+body.services-open #services {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
@@ -65,7 +67,8 @@ body.gallery-open #gallery {
   transform: translateY(-0.75rem);
   transition: opacity 0.5s ease, transform 0.6s var(--ease-out);
 }
-body.gallery-open .g-bar { opacity: 1; transform: none; }
+body.gallery-open #gallery .g-bar,
+body.services-open #services .g-bar { opacity: 1; transform: none; }
 .g-back {
   cursor: pointer;
   border: 1px solid rgb(255 255 255 / 0.2);
@@ -241,8 +244,9 @@ body.gallery-open .g-tile {
 
 @media (prefers-reduced-motion: reduce) {
   .lb-bg, .lb-img, .lb-cap span, .lb-close { transition-duration: 0.01s !important; transition-delay: 0s !important; }
-  main, #gallery, .g-bar, .g-tile, .g-tile img, .g-cap, .g-cap span, .g-cap::before { transition-duration: 0.01s !important; transition-delay: 0s !important; }
-  body.gallery-open main { transform: none; filter: none; }
+  main, #gallery, #services, .g-bar, .s-card, .g-tile, .g-tile img, .g-cap, .g-cap span, .g-cap::before { transition-duration: 0.01s !important; transition-delay: 0s !important; }
+  body.gallery-open main,
+body.services-open main { transform: none; filter: none; }
   .g-tile { transform: none; filter: none; }
   .g-tile img { transform: none; }
 }

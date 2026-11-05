@@ -32,7 +32,8 @@
       <a href="https://instagram.com/bnfg.lighting" target="_blank" rel="noopener" class="rounded-full border border-white/20 py-2.5 pr-6 pl-[calc(1.5rem+0.1em)] text-sm tracking-widest text-white/80 transition duration-300 hover:border-white/60 hover:bg-white/5 hover:text-white focus-visible:border-white/60 focus-visible:text-white focus-visible:outline-none">@bnfg.lighting</a>
       <a href="#about" class="rounded-full border border-white/20 py-2.5 pr-6 pl-[calc(1.5rem+0.1em)] text-sm tracking-widest text-white/80 transition duration-300 hover:border-white/60 hover:bg-white/5 hover:text-white focus-visible:border-white/60 focus-visible:text-white focus-visible:outline-none">about</a>
       <button type="button" id="gallery-open" aria-controls="gallery" class="rounded-full border border-white/20 py-2.5 pr-6 pl-[calc(1.5rem+0.1em)] text-sm tracking-widest text-white/80 transition duration-300 hover:border-white/60 hover:bg-white/5 hover:text-white focus-visible:border-white/60 focus-visible:text-white focus-visible:outline-none">gallery</button>
-    </div>
+      <button type="button" id="services-open" aria-controls="services" class="rounded-full border border-white/20 py-2.5 pr-6 pl-[calc(1.5rem+0.1em)] text-sm tracking-widest text-white/80 transition duration-300 hover:border-white/60 hover:bg-white/5 hover:text-white focus-visible:border-white/60 focus-visible:text-white focus-visible:outline-none">services</button>
+      </div>
   </main>
 
   <section id="about" class="font-[family-name:Helvetica_Neue,Helvetica,Arial,sans-serif] tracking-widest relative z-10 w-full flex items-center justify-center px-6 py-24" aria-label="About">
@@ -41,7 +42,6 @@
         <p class="text-white font-medium">I provide live lighting experiences for events at UO.</p>
         <p class="text-white font-medium">All of my shows are busked, meaning that I control the entire rig live, following the DJ. Essentially, I'm doing what the DJ does with music, but with the lighting.</p>
         <p class="text-white font-medium">I got started my freshman year, running lighting at the Bridge Raves. I worked one event where it was under the name of The Temple, then worked with Dirt God and Wubsea on BigTop events in the same location.</p>
-        <p class="text-white font-medium">When I first started, all I had was a StreamDeck and four PARs (static RGB lights), all set up on a big stick as a truss (lol). I have since expanded, and my current setup includes six PARs, four moving lights, and dual tripod stands.</p>
         <p class="text-white font-medium">I've had the pleasure of working with a few fraternities, as well as at The Annex for 1STGEN: Rave Oregon.</p>
 
         <p class="text-white font-medium">I'd love to work with you to make your event the best it can be, please reach out to my instagram <span><a class="underline font-bold" href="https://instagram.com/bnfg.lighting">@bnfg.lighting</a></span> for pricing inquiries and to discuss. </p>
@@ -56,6 +56,75 @@
     </header>
     <div class="g-scroll" id="gallery-scroll">
       <div id="gallery-entries"></div>
+    </div>
+  </section>
+  <section id="services" aria-label="Services" aria-hidden="true" inert>
+    <header class="g-bar">
+      <button type="button" id="services-close" class="g-back">&larr; back</button>
+      <span class="g-brand">BNFG Lighting</span>
+    </header>
+    <div class="g-scroll">
+      <div class="mx-auto max-w-240 pt-6">
+        <h2 class="g-title">Services</h2>
+        <div class="grid grid-cols-2 items-start gap-5 max-[52rem]:grid-cols-1">
+          <article class="s-card relative rounded-2xl border border-white/10 bg-[#0a0c10] bg-linear-to-b from-white/5 to-transparent to-40% p-8 max-[30rem]:p-6 shadow-[0_1.5rem_3rem_rgb(0_0_0/0.35)] opacity-0 translate-y-8 scale-[0.97] blur-[10px] transition-[opacity,translate,scale,filter,border-color] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-white/25 [body.services-open_&]:translate-y-0 [body.services-open_&]:scale-100 [body.services-open_&]:opacity-100 [body.services-open_&]:blur-none">
+            <h3 class="text-[1.75rem] leading-[1.1] font-black tracking-tight text-white">Busked Shows</h3>
+            <p class="mt-3.5 mb-6 border-b border-white/10 pb-6 text-[0.925rem] leading-relaxed text-white/60">My standard work. Live-controlled lighting that follows the DJ and the room from walk-in to blackout.</p>
+            <h4 class="mb-2.5 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-white/90">What you get</h4>
+            <ul class="grid gap-3">
+              <li class="relative pl-6 text-[0.925rem] leading-relaxed text-white/60 before:absolute before:top-[0.6em] before:left-0.5 before:size-1.5 before:rounded-full before:bg-white/70 before:shadow-[0_0_0.6rem_rgb(255_255_255/0.6)] before:content-['']">Lighting setup and teardown, using my own fixtures and equipment. For a small extra fee, I can add your in-house fixtures to the show.</li>
+              <li class="relative pl-6 text-[0.925rem] leading-relaxed text-white/60 before:absolute before:top-[0.6em] before:left-0.5 before:size-1.5 before:rounded-full before:bg-white/70 before:shadow-[0_0_0.6rem_rgb(255_255_255/0.6)] before:content-['']">High quality live operation where I match everything to the DJ's vibe.</li>
+            </ul>
+            <div class="mt-7 rounded-xl border border-white/10 bg-white/3 p-5">
+              <h4 class="mb-2.5 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-white/90">Pricing</h4>
+              <p class="mb-1.5 text-xl font-bold tracking-tight text-white">Generally under $450</p>
+              <p class="text-[0.925rem] leading-relaxed text-white/60">Varies based on event runtime and other factors. Contact me on Instagram to discuss the plan.</p>
+            </div>
+          </article>
+
+          <article class="s-card relative rounded-2xl border border-white/10 bg-[#0a0c10] bg-linear-to-b from-white/5 to-transparent to-40% p-8 max-[30rem]:p-6 shadow-[0_1.5rem_3rem_rgb(0_0_0/0.35)] opacity-0 translate-y-8 scale-[0.97] blur-[10px] transition-[opacity,translate,scale,filter,border-color] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-white/25 [body.services-open_&]:translate-y-0 [body.services-open_&]:scale-100 [body.services-open_&]:opacity-100 [body.services-open_&]:blur-none delay-100">
+            <h3 class="text-[1.75rem] leading-[1.1] font-black tracking-tight text-white">Lighting Design</h3>
+            <p class="mt-3.5 mb-6 border-b border-white/10 pb-6 text-[0.925rem] leading-relaxed text-white/60">Design services at several levels, tailored to your budget. Operation is not included, except at Level 3</p>
+            <ol class="grid gap-6">
+              <li class="relative flex gap-4 after:absolute after:top-9 after:-bottom-6 after:left-4 after:w-px after:bg-white/10 after:content-['']">
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-white/25 text-sm font-bold text-white">1</span>
+                <div class="grid gap-2.5 pt-1.5">
+                  <h4 class="mb-2.5 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-white/90 mb-0">Fixtures &amp; Rigging</h4>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">Given your budget and any ideas or input you have, I will research fixtures and create a stage plot and fixture list for your space.</p>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">I'll also design color palettes and effects for the selected fixtures.</p>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">You are responsible for purchasing fixtures and rigging equipment. For a labor fee, I can handle installation.</p>
+                  <p class="text-[0.1rem] leading-relaxed text-white/90">Pricing: $75 + $35/hr for installation</p>
+                  </div>
+              </li>
+              <li class="relative flex gap-4 after:absolute after:top-9 after:-bottom-6 after:left-4 after:w-px after:bg-white/10 after:content-['']">
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-white/25 text-sm font-bold text-white">2</span>
+                <div class="grid gap-2.5 pt-1.5">
+                  <h4 class="mb-2.5 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-white/90 mb-0">QLC+ Showfile</h4>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">Everything in Level 1, plus a showfile mapped to your fixtures in QLC+ (a free DMX control program for Mac, Windows, and Linux).</p>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">Built for automatic effects, with simple controls for effects and colors. Easy to use with a mouse, and QLC+ supports binding buttons to MIDI controllers.</p>
+                  <p class="text-[0.1rem] leading-relaxed text-white/90">Pricing: $150</p>
+                  </div>
+              </li>
+              <li class="relative flex gap-4">
+                <span class="grid size-8 shrink-0 place-items-center rounded-full border border-white/25 text-sm font-bold text-white">3</span>
+                <div class="grid gap-2.5 pt-1.5">
+                  <h4 class="mb-2.5 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-white/90 mb-0">Full Service</h4>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">The big one: everything from Levels 1 and 2, plus full setup and live busking.</p>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">Depending on your setup from Level 1, I may use only your equipment or, if desired, add my own fixtures to the show.</p>
+                  <p class="text-[0.925rem] leading-relaxed text-white/60">You'll still receive the QLC+ showfile, though I'll busk with my own.</p>
+                  <h4 class="mb-2.5 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-white/90">Pricing</h4>
+                    <ul class="grid gap-3">
+                      <li class="relative pl-6 text-[0.925rem] leading-relaxed text-white/60 before:absolute before:top-[0.6em] before:left-0.5 before:size-1.5 before:rounded-full before:bg-white/70 before:shadow-[0_0_0.6rem_rgb(255_255_255/0.6)] before:content-['']">$150 + $35/hr for installation</li>
+                      <li class="relative pl-6 text-[0.925rem] leading-relaxed text-white/60 before:absolute before:top-[0.6em] before:left-0.5 before:size-1.5 before:rounded-full before:bg-white/70 before:shadow-[0_0_0.6rem_rgb(255_255_255/0.6)] before:content-['']">Busking pricing w/ package discount (varies)</li>
+                    </ul>
+
+               
+                  </div>
+              </li>
+            </ol>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 

@@ -213,4 +213,33 @@
   });
 
   if (location.hash === '#gallery') { load(); setOpen(true); }
+
+  // ---- Services overlay: same open/close behaviour as the gallery.
+  const services = document.getElementById('services');
+  const sOpen = document.getElementById('services-open');
+  const sClose = document.getElementById('services-close');
+
+  function setServices(open) {
+    body.classList.toggle('services-open', open);
+    services.inert = !open;
+    services.setAttribute('aria-hidden', String(!open));
+    document.querySelector('main').inert = open;
+    if (open) { services.querySelector('.g-scroll').scrollTop = 0; sClose.focus({ preventScroll: true }); }
+    else sOpen.focus({ preventScroll: true });
+  }
+
+  sOpen.addEventListener('click', () => {
+    history.pushState({ services: true }, '', '#services');
+    setServices(true);
+  });
+  sClose.addEventListener('click', () => {
+    if (history.state && history.state.services) history.back();
+    else { history.replaceState(null, '', location.pathname); setServices(false); }
+  });
+  addEventListener('popstate', () => setServices(location.hash === '#services'));
+  addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && body.classList.contains('services-open')) sClose.click();
+  });
+
+  if (location.hash === '#services') setServices(true);
 })();
